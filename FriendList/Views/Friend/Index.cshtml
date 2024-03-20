@@ -1,0 +1,21 @@
+﻿@model IQueryable<FriendList_DomainModel.Models.Friend>
+@using FriendList.Controllers
+
+<h2>Friend List</h2>
+
+<table class="table">
+    <tr><td>Id</td><td>Name</td><td>Place</td></tr>
+
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.Id</td>
+            <td>@p.Name</td>
+            <td>@p.Place</td>
+        </tr>
+    }
+</table>
+
+<div style="display:block">
+    <a href="@Url.Action(nameof(FriendController.Create))"> Create </a>
+</div>
