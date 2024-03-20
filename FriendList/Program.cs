@@ -1,9 +1,16 @@
+using FriendList;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+Startup.RegisterDAL(builder);
+Startup.RegisterService(builder);
+
 var app = builder.Build();
+
+DBInitializer.InitializeDB(app.Services);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -22,6 +29,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Friend}/{action=Index}/{id?}");
 
 app.Run();
