@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendList", "FriendList\FriendList.csproj", "{47BE341C-B5B5-45B0-9845-1780C741CC28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FriendList", "FriendList\FriendList.csproj", "{47BE341C-B5B5-45B0-9845-1780C741CC28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FriendList_Domain", "FriendList_Domain", "{3C65970D-C3FF-4748-9DEF-ED0264C6B145}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FriendList_DAL", "FriendList_DAL", "{D53BB06E-F612-44CF-9FBA-5DB000337491}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FriendList_DomainModel", "FriendList_DomainModel\FriendList_DomainModel.csproj", "{0EAE929E-94FF-4BEB-B677-995949E9FE85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FriendList_DAL", "FriendList_DAL\FriendList_DAL.csproj", "{D64EF201-888A-4DA8-8B07-94043FAE24DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FriendList_Service", "FriendList_Service", "{6D0DD4DA-F847-4E2B-A331-5481CADDFAA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendList_Service", "FriendList_Service\FriendList_Service.csproj", "{085E99DA-8D67-4462-ABA9-5CA0238D5F43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +27,26 @@ Global
 		{47BE341C-B5B5-45B0-9845-1780C741CC28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47BE341C-B5B5-45B0-9845-1780C741CC28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47BE341C-B5B5-45B0-9845-1780C741CC28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EAE929E-94FF-4BEB-B677-995949E9FE85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EAE929E-94FF-4BEB-B677-995949E9FE85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EAE929E-94FF-4BEB-B677-995949E9FE85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EAE929E-94FF-4BEB-B677-995949E9FE85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D64EF201-888A-4DA8-8B07-94043FAE24DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D64EF201-888A-4DA8-8B07-94043FAE24DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D64EF201-888A-4DA8-8B07-94043FAE24DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D64EF201-888A-4DA8-8B07-94043FAE24DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{085E99DA-8D67-4462-ABA9-5CA0238D5F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{085E99DA-8D67-4462-ABA9-5CA0238D5F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{085E99DA-8D67-4462-ABA9-5CA0238D5F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{085E99DA-8D67-4462-ABA9-5CA0238D5F43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0EAE929E-94FF-4BEB-B677-995949E9FE85} = {3C65970D-C3FF-4748-9DEF-ED0264C6B145}
+		{D64EF201-888A-4DA8-8B07-94043FAE24DC} = {D53BB06E-F612-44CF-9FBA-5DB000337491}
+		{085E99DA-8D67-4462-ABA9-5CA0238D5F43} = {6D0DD4DA-F847-4E2B-A331-5481CADDFAA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C2009911-8B1C-41E1-B7DA-A2564568EF2E}
